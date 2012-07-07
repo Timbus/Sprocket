@@ -1,0 +1,78 @@
+=head1 Name
+
+Sprocket - A text editor from the future.
+
+=head1 Description
+
+Sprocket is a modest attempt at adding the excellent features from the
+L<acme editor|http://plan9.bell-labs.com/sys/doc/acme/acme.html>
+into a slightly more featureful text editor.
+
+Its primary feature is the use of a revolutionary new device called
+a 'mouse'. They are an increasingly popular peripheral that you should
+be able to find in some specialty stores.
+
+Be sure that you do not buy ones containing cogs.
+
+=head1 Rationale
+
+I like the mouse. I think the mouse is underutilized in most text editors,
+and I feel this is one of the reasons programmers often discard it in 
+favor of using mind numbing key combinations and sequences instead.
+
+I would like to fix that. Because the mouse is actually really nice.
+
+
+=head1 Usage
+
+Open it and type.
+
+=head2 Mouse Chaining
+
+Borrowing the idea from acme, this editor tries to use mouse button
+combinations.
+I have opted for the term 'chaining' rather than 'chording' because most 
+actions need to be done in a sequence, not just by pressing down multiple 
+buttons. In other words, sprocket needs chains to apply work :)
+
+=over
+
+=item * Left Click - Selection.
+
+A family favorite. Left click is used to position the insert cursor,
+and highlight text to perform an action on it.
+Highlighting text with this button and chaining it with another button
+will cause the action to be performed on the selection.
+
+=item * Right Click - Seek.
+
+Right click will try to find the next thing you are looking for. If you
+right click a word, you'll seek to the next one. If you right click an 
+opening delimiter, it will seek to the closing delimiter.
+If I add acme's file browser features (I am on the fence about this..) 
+you can also descend into a directory or to a file by right clicking on it.
+
+=item * Middle Click - Execute.
+
+Run the thing what that you clicked.
+
+=item * Shift - Bind.
+
+If you hold shit and click two places in a text editor, you might notice 
+it bounds the text you just clicked. Kinda handy. This combines with 
+right clicking as well. This means you can easily select a function body
+or block of quoted text just by right clicking it with shift held down.
+
+It will also do something with middle clicking but I have no idea yet. 
+Probably excecute the text and replace the selection with the result.
+
+=item * Ctrl - Multiply.
+
+Control clicking in a few text editors will select multiple pieces of text
+and position multiple cursors on them, which is just neato. Sprocket
+totally supports this.
+
+Right clicking with control will select all matches. Great for refactoring.
+
+=back
+
